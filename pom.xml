@@ -16,32 +16,14 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <junit.jupiter.version>5.10.2</junit.jupiter.version>
     </properties>
 
-    <dependencies>
-        <!-- JUnit 5 para pruebas unitarias -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>${junit.jupiter.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>${junit.jupiter.version}</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
-
     <build>
-        <!-- Directorio de fuentes configurado en src para soportar paquetes bajo src/ec/edu/puce -->
+        <!-- Directorio de código fuente configurado en src -->
         <sourceDirectory>src</sourceDirectory>
-        <testSourceDirectory>src</testSourceDirectory>
 
         <plugins>
-            <!-- Plugin de compilación -->
+            <!-- Plugin de compilación de Java -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -51,7 +33,7 @@
                 </configuration>
             </plugin>
 
-            <!-- Plugin para ejecutar la aplicación principal con 'mvn exec:java' -->
+            <!-- Plugin para ejecutar la aplicación con 'mvn exec:java' -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
@@ -61,7 +43,7 @@
                 </configuration>
             </plugin>
 
-            <!-- Plugin para empaquetar un JAR ejecutable -->
+            <!-- Plugin para empaquetar un archivo JAR ejecutable -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
