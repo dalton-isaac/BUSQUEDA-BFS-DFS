@@ -7,18 +7,20 @@ Proyecto de **Estructuras de Datos** que modela los partidos jugados en la **Lig
 
 ---
 
-## 📁 Estructura del Proyecto
+## 📁 Estructura Estándar de Maven
 
 ```text
 ├── pom.xml                                   # Configuración de Maven
 ├── README.md                                 # Documentación del proyecto
 ├── .gitignore                                # Exclusión de binarios y temporales
 └── src
-    └── ec
-        └── edu
-            └── puce                          # Paquete ec.edu.puce
-                ├── Grafo.java                # Estructura del Grafo, Matriz, BFS y DFS
-                └── LigaPro.java              # Clase principal ejecutable (main)
+    └── main
+        └── java
+            └── ec
+                └── edu
+                    └── puce                  # Paquete: ec.edu.puce
+                        ├── Grafo.java        # Clase Grafo: Matriz, BFS y DFS
+                        └── LigaPro.java      # Clase principal ejecutable (main)
 ```
 
 ---
@@ -59,17 +61,17 @@ EME	 1	 0	 0	 0
 
 ## 🚀 Cómo Ejecutar el Proyecto
 
-### Opción 1: Con Maven
+### Opción 1: Desde el IDE (VS Code / Eclipse / IntelliJ)
+Abre [LigaPro.java](file:///c:/Users/ISAAC/Desktop/PUCE/Segundo%20Semestre/Estructuras%20de%20datos/Parcial%203/Gestión%20de%20Memoria%20Dinámica%20y%20Estructuras%20Lineales/src/main/java/ec/edu/puce/LigaPro.java) y presiona **`Ctrl + F5`** (o haz clic en el botón de **Run ▶️**).
+
+### Opción 2: Con Maven
 ```bash
 mvn clean compile
 mvn exec:java
 ```
 
-### Opción 2: Con Java directo (Terminal)
+### Opción 3: Con Java directo (Terminal)
 ```bash
-javac -d bin src/ec/edu/puce/Grafo.java src/ec/edu/puce/LigaPro.java
+javac -d bin src/main/java/ec/edu/puce/Grafo.java src/main/java/ec/edu/puce/LigaPro.java
 java -cp bin ec.edu.puce.LigaPro
 ```
-
-### Opción 3: Desde el IDE
-Abre [LigaPro.java](file:///c:/Users/ISAAC/Desktop/PUCE/Segundo%20Semestre/Estructuras%20de%20datos/Parcial%203/Gestión%20de%20Memoria%20Dinámica%20y%20Estructuras%20Lineales/src/ec/edu/puce/LigaPro.java) y presiona **`Ctrl + F5`** (o haz clic en el botón de **Run ▶️**).

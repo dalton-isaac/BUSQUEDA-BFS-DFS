@@ -19,9 +19,6 @@
     </properties>
 
     <build>
-        <!-- Directorio de código fuente configurado en src -->
-        <sourceDirectory>src</sourceDirectory>
-
         <plugins>
             <!-- Plugin de compilación de Java -->
             <plugin>

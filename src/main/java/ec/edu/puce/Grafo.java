@@ -4,9 +4,12 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * Clase que representa un Grafo mediante Matriz de Adyacencia
- * con algoritmos de recorrido y búsqueda BFS y DFS.
+ * ============================================================================
+ * Clase Grafo: Representación de Grafo mediante Matriz de Adyacencia
+ * Algoritmos: Búsqueda en Anchura (BFS) y Búsqueda en Profundidad (DFS)
  * Paquete: ec.edu.puce
+ * Asignatura: Estructuras de Datos
+ * ============================================================================
  */
 public class Grafo {
 
