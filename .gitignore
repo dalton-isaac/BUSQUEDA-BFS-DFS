@@ -1,0 +1,17 @@
+# Archivos compilados de Java y Maven
+target/
+bin/
+*.class
+
+# Entornos de desarrollo e IDEs
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# Logs y temporales
+*.log
+.DS_Store
+Thumbs.db
